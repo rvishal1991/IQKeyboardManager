@@ -202,8 +202,12 @@ public extension UIView {
             _IQcanBecomeFirstResponder = textView.isEditable
         }
         
+//        if _IQcanBecomeFirstResponder == true {
+//            _IQcanBecomeFirstResponder = isUserInteractionEnabled == true && isHidden == false && alpha != 0.0 && isAlertViewTextField() == false && isSearchBarTextField() == false
+//        }
+        
         if _IQcanBecomeFirstResponder == true {
-            _IQcanBecomeFirstResponder = isUserInteractionEnabled == true && isHidden == false && alpha != 0.0 && isAlertViewTextField() == false && isSearchBarTextField() == false
+            _IQcanBecomeFirstResponder = isUserInteractionEnabled == true && isHidden == false && alpha != 0.0 && isAlertViewTextField() == false 
         }
 
         return _IQcanBecomeFirstResponder
